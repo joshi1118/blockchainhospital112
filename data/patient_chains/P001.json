@@ -1,0 +1,38 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-04-10T21:34:16.879Z",
+    "type": "GENESIS",
+    "data": {
+      "id": "P001",
+      "name": "Alice",
+      "type": "PATIENT_GENESIS"
+    },
+    "previous_hash": "0",
+    "hash": "0b50e9fc5f876da084e4ccff9018854c6f8600b1a6680f4f6f67c1b4c3bc7e4c"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-04-10T21:34:16.884Z",
+    "type": "DIAGNOSIS",
+    "data": {
+      "doctorId": "DOC01",
+      "diagnosis": "Seasonal Allergy",
+      "prescription": "Antihistamines 10mg",
+      "status": "PENDING_CONFIRMATION"
+    },
+    "previous_hash": "0b50e9fc5f876da084e4ccff9018854c6f8600b1a6680f4f6f67c1b4c3bc7e4c",
+    "hash": "36379b9cffd65bc97ff9c5453f636f507287c7443238bd97d5701245d3a19998"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-04-10T21:34:16.885Z",
+    "type": "PATIENT_CONFIRMATION",
+    "data": {
+      "diagnosisBlockIndex": 1,
+      "patientId": "P001"
+    },
+    "previous_hash": "36379b9cffd65bc97ff9c5453f636f507287c7443238bd97d5701245d3a19998",
+    "hash": "467289440512496ffe17cb8e6f77af4dc469ebf81458b4f55415c27ea71fa261"
+  }
+]

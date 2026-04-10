@@ -1,0 +1,131 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-04-10T21:34:16.878Z",
+    "type": "GENESIS",
+    "data": {
+      "message": "Hospital Blockchain Genesis"
+    },
+    "previous_hash": "0",
+    "hash": "74fdc273776f9c61844af46f060527c562f1950b9c23bdb686597f163d7c5ecf"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-04-10T21:34:16.880Z",
+    "type": "HOSPITAL_REGISTER_PATIENT",
+    "data": {
+      "hospital": "hospital",
+      "patientId": "P001",
+      "name": "Alice"
+    },
+    "previous_hash": "74fdc273776f9c61844af46f060527c562f1950b9c23bdb686597f163d7c5ecf",
+    "hash": "6bae2e00faf2ce80b6f8e82598f99df0b9c23c0dfa1200c95b25aed880eabfed"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-04-10T21:34:16.881Z",
+    "type": "ADMIN_ADD_DOCTOR",
+    "data": {
+      "admin": "admin",
+      "doctorId": "DOC01",
+      "name": "Dr. Bob"
+    },
+    "previous_hash": "6bae2e00faf2ce80b6f8e82598f99df0b9c23c0dfa1200c95b25aed880eabfed",
+    "hash": "2e5edb51d2fbe633b93264b08e9de05d9ac0206cd3149f95989f079bc77d6aeb"
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-04-10T21:34:16.882Z",
+    "type": "APPOINTMENT_REQUEST",
+    "data": {
+      "requestId": "REQ_1775856856882",
+      "patientId": "P001"
+    },
+    "previous_hash": "2e5edb51d2fbe633b93264b08e9de05d9ac0206cd3149f95989f079bc77d6aeb",
+    "hash": "09ea3aa46c326c099f82a1699aae5aa1f1917fb9aff5667cb7b96497a47afc42"
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-04-10T21:34:16.883Z",
+    "type": "HOSPITAL_HANDLE_APPOINTMENT",
+    "data": {
+      "hospital": "hospital",
+      "patientId": "P001",
+      "status": "APPROVED",
+      "time": "2024-11-10 09:00 AM",
+      "requestId": "REQ_1775856856882"
+    },
+    "previous_hash": "09ea3aa46c326c099f82a1699aae5aa1f1917fb9aff5667cb7b96497a47afc42",
+    "hash": "b1cf81ea1474fbc39206d40ff84002dc2a652c145ba85bb7febff7c81950632f"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-04-10T21:34:16.883Z",
+    "type": "DOCTOR_CONFIRM_VISIT",
+    "data": {
+      "doctorId": "DOC01",
+      "patientId": "P001"
+    },
+    "previous_hash": "b1cf81ea1474fbc39206d40ff84002dc2a652c145ba85bb7febff7c81950632f",
+    "hash": "11e427a000f346645154fa4dc2165755d287fb8d1c86b2a6975f790f52e1c259"
+  },
+  {
+    "index": 6,
+    "timestamp": "2026-04-10T21:34:16.884Z",
+    "type": "DOCTOR_ADD_DIAGNOSIS",
+    "data": {
+      "doctorId": "DOC01",
+      "patientId": "P001",
+      "diagnosisBlockIndex": 1
+    },
+    "previous_hash": "11e427a000f346645154fa4dc2165755d287fb8d1c86b2a6975f790f52e1c259",
+    "hash": "d88ab93429a77f3ef8c0ecd6355e7249487aa516d29d346be509b17cd1170551"
+  },
+  {
+    "index": 7,
+    "timestamp": "2026-04-10T21:34:16.885Z",
+    "type": "PATIENT_CONFIRM_DIAGNOSIS",
+    "data": {
+      "patientId": "P001",
+      "blockIndex": 1
+    },
+    "previous_hash": "d88ab93429a77f3ef8c0ecd6355e7249487aa516d29d346be509b17cd1170551",
+    "hash": "b54df0c9766f588badbf8bf48e484b5c77ce3195b9ad5c4cb34fdd7e53124310"
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-04-10T21:34:16.886Z",
+    "type": "PATIENT_GENERATE_TOKEN",
+    "data": {
+      "patientId": "P001",
+      "tokenId": "TOKEN_1775856856885",
+      "type": "LIMITED",
+      "issuedTo": "ins_01"
+    },
+    "previous_hash": "b54df0c9766f588badbf8bf48e484b5c77ce3195b9ad5c4cb34fdd7e53124310",
+    "hash": "49277ec7393e600759feb0bcc4fc08457943a9158ca533f65e7d6e82c5fc7e93"
+  },
+  {
+    "index": 9,
+    "timestamp": "2026-04-10T21:34:16.887Z",
+    "type": "INSURANCE_ACCESS_DATA",
+    "data": {
+      "insuranceId": "ins_01",
+      "tokenId": "TOKEN_1775856856885",
+      "patientId": "P001"
+    },
+    "previous_hash": "49277ec7393e600759feb0bcc4fc08457943a9158ca533f65e7d6e82c5fc7e93",
+    "hash": "6127bbcd6d5272a710c57703dad8b26e941b02146fac2507544100807b23276c"
+  },
+  {
+    "index": 10,
+    "timestamp": "2026-04-10T21:39:22.184Z",
+    "type": "USER_LOGIN",
+    "data": {
+      "id": "admin",
+      "role": "ADMIN"
+    },
+    "previous_hash": "6127bbcd6d5272a710c57703dad8b26e941b02146fac2507544100807b23276c",
+    "hash": "29e9a24d6534275cc059eeb9ad6fa7a78d195ce883619a80e791930725e36862"
+  }
+]
